@@ -131,7 +131,7 @@ class MainForm(Form):
 		area = pi * radius ** 2
 		area = round(area, 3)
 		# round area to 3 decimal places
-		circ = radius * 2
+		circ = 2 * pi * radius
 		
 		self._label2.Text = str(area)
 		self._label3.Text = str(circ)
