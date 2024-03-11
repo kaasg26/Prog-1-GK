@@ -1,0 +1,12 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Lanf58t.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Lanf58t.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Lanf58t.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\obj\Debug\Lanf58t.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\obj\Debug\Lanf58t.MainForm.resources
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\obj\Debug\Lanf58t.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lanf58t\Lanf58t\obj\Debug\Lanf58t.exe

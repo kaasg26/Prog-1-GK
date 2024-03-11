@@ -1,0 +1,12 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Favorite Club.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Favorite Club.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Favorite Club.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\obj\Debug\Favorite Club.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\obj\Debug\Favorite_Club.MainForm.resources
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\obj\Debug\Favorite Club.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Favorite Club\Favorite Club\obj\Debug\Favorite Club.exe

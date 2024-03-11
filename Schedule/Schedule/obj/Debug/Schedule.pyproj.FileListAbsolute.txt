@@ -1,0 +1,12 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Schedule.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Schedule.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Schedule.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\obj\Debug\Schedule.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\obj\Debug\Schedule.MainForm.resources
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\obj\Debug\Schedule.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Schedule\Schedule\obj\Debug\Schedule.exe

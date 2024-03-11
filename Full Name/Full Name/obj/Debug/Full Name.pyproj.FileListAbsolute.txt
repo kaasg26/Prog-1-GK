@@ -1,0 +1,12 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Full Name.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Full Name.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Full Name.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\obj\Debug\Full Name.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\obj\Debug\Full_Name.MainForm.resources
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\obj\Debug\Full Name.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Full Name\Full Name\obj\Debug\Full Name.exe
