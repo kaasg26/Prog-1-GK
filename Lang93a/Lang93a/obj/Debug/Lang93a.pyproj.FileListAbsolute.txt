@@ -1,0 +1,10 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\obj\Debug\Lang93a.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Lang93a.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Lang93a.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Lang93a.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang93a\Lang93a\obj\Debug\Lang93a.exe
