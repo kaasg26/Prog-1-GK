@@ -1,0 +1,12 @@
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Lang162b.exe.config
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Lang162b.exe
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Lang162b.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\obj\Debug\Lang162b.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\obj\Debug\Lang162b.MainForm.resources
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\obj\Debug\Lang162b.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Desktop\Prog-1 GK\Lang162b\Lang162b\obj\Debug\Lang162b.exe
