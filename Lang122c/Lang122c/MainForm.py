@@ -67,7 +67,7 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		pass
+		
 
 	def Button2Click(self, sender, e):
 		self._listBox1.Items.Clear()
