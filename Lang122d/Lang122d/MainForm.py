@@ -19,14 +19,15 @@ class MainForm(Form):
 		# listBox1
 		# 
 		self._listBox1.FormattingEnabled = True
-		self._listBox1.Location = System.Drawing.Point(39, 28)
+		self._listBox1.Location = System.Drawing.Point(12, 12)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(449, 238)
+		self._listBox1.Size = System.Drawing.Size(311, 394)
 		self._listBox1.TabIndex = 0
+		self._listBox1.SelectedIndexChanged += self.ListBox1SelectedIndexChanged
 		# 
 		# button1
 		# 
-		self._button1.Location = System.Drawing.Point(28, 292)
+		self._button1.Location = System.Drawing.Point(13, 413)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(75, 23)
 		self._button1.TabIndex = 1
@@ -36,7 +37,7 @@ class MainForm(Form):
 		# 
 		# button2
 		# 
-		self._button2.Location = System.Drawing.Point(129, 292)
+		self._button2.Location = System.Drawing.Point(132, 413)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(75, 23)
 		self._button2.TabIndex = 2
@@ -47,7 +48,7 @@ class MainForm(Form):
 		# button3
 		# 
 		self._button3.ForeColor = System.Drawing.Color.Crimson
-		self._button3.Location = System.Drawing.Point(228, 292)
+		self._button3.Location = System.Drawing.Point(248, 413)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(75, 23)
 		self._button3.TabIndex = 3
@@ -57,27 +58,27 @@ class MainForm(Form):
 		# 
 		# MainForm
 		# 
-		self.BackColor = System.Drawing.SystemColors.ActiveCaption
-		self.ClientSize = System.Drawing.Size(540, 342)
+		self.BackColor = System.Drawing.SystemColors.ScrollBar
+		self.ClientSize = System.Drawing.Size(335, 453)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
 		self.Controls.Add(self._listBox1)
 		self.Name = "MainForm"
-		self.Text = "Lang122c"
+		self.Text = "Lang122d"
 		self.ResumeLayout(False)
 
 
+	def ListBox1SelectedIndexChanged(self, sender, e):
+		pass
+
 	def Button1Click(self, sender, e):
-		heading = "Column 1 \t\ Column 2 \t\ Column 3 \t\ Column 4 \t\ Column 5"
+		heading = "X \t\t Y"
 		self._listBox1.Items.Add(heading)
-		for num in range(1, 4+1):
-			C2 = num * 2
-			C3 = num * 2 + 1
-			C4 = num * 2 * 2
-			C5 = num * 2
-			C52 = C5 * C5
-			msg = str(num) + "\t\t" + str(C2) + "\t\t" + str(C3) + "\t\t" + str(C4) + "\t\t" + str(C52)
+		for num in range(-12, 16+1):
+			Xs = num
+			Y = Xs**6 - 3 * Xs**5 - 93 * Xs**4 + 87 * Xs**3 + 1596 * Xs**2 - 1380 * Xs - 2800
+			msg = str(num) + "\t\t" + str(Y)
 			self._listBox1.Items.Add(msg)
 
 	def Button2Click(self, sender, e):
