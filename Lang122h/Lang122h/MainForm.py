@@ -77,6 +77,7 @@ class MainForm(Form):
 			nsqrd = num**2
 			nsqrt = math.sqrt(num)
 			csqrt = num**3
+			csqrt = math.sqrt(num)
 			
 			msg = str(num) + "\t\t" + str(nsqrd) + "\t\t" + str(round(nsqrt, 4)) + "\t\t\t" + str(csqrt) + "\t\t" + str(round(csqrt, 4))
 			self._listBox1.Items.Add(msg)
