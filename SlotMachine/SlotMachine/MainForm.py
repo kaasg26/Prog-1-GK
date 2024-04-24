@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -277,11 +278,14 @@ class MainForm(Form):
 		self.ResumeLayout(False)
 		self.PerformLayout()
 
-	def__init__(self):
+
+	def __init__(self):
 			self.InitializeComponent()
 			self.num1 = 0
 			self.num2 = 0
 			self.num3 = 0
+			
+			
 			
 	def PictureBox1Click(self, sender, e):
 		pass
@@ -320,7 +324,7 @@ class MainForm(Form):
 		
 		#copy into timerTick
 		
-		if self._textBox1.Text = "":
+		if self._textBox1.Text(" "):
 			MessageBox.Show("You must enter an amount to bet First.")
 			return
 		

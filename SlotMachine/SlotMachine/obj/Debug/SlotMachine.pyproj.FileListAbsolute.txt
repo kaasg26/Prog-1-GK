@@ -1,3 +1,12 @@
 C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyprojResolveAssemblyReference.cache
 C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.MainForm.resources
 C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyproj.GenerateResource.Cache
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe.config
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\SlotMachine.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\IronPython.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\IronPython.Modules.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\Microsoft.Scripting.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.exe
