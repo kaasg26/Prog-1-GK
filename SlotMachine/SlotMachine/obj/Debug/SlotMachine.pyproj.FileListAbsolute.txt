@@ -1,0 +1,3 @@
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyprojResolveAssemblyReference.cache
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.MainForm.resources
+C:\Users\kaas.g\Documents\GitHub\Prog-1-GK\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyproj.GenerateResource.Cache
