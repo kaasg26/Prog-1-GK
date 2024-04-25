@@ -8,6 +8,9 @@ from System.Windows.Forms import *
 class MainForm(Form):
 	def __init__(self):
 		self.InitializeComponent()
+		self.num1 = 0
+		self.num2 = 0
+		self.num3 = 0
 	
 	def InitializeComponent(self):
 		self._components = System.ComponentModel.Container()
@@ -279,13 +282,7 @@ class MainForm(Form):
 		self.PerformLayout()
 
 
-	def __init__(self):
-			self.InitializeComponent()
-			self.num1 = 0
-			self.num2 = 0
-			self.num3 = 0
-			
-			
+
 			
 	def PictureBox1Click(self, sender, e):
 		pass
@@ -302,8 +299,8 @@ class MainForm(Form):
 		if money > 25:
 			MessageBox.Show("You failed to steal money!")
 		else:
-			cmoney = float(self._label2.Text)
-			self._label2.Text = str(round(cmoney + money,2))
+			cmoney = float(self._label3.Text)
+			self._label3.Text = str(round(cmoney + money, 2))
 		pass
 
 	def Label3Click(self, sender, e):
@@ -324,7 +321,7 @@ class MainForm(Form):
 		
 		#copy into timerTick
 		
-		if self._textBox1.Text(" "):
+		if self._textBox1.Text == " ":
 			MessageBox.Show("You must enter an amount to bet First.")
 			return
 		
@@ -340,9 +337,9 @@ class MainForm(Form):
 			MessageBox.Show("You don't have enough money")
 		else:
 			self._button1.BackgroundImage = levOn
-			self._pictureBox2.Visable = True
+			self._pictureBox2.Visible = True
 			self._timer1.Enabled = True
-			self._lable2.Text = str(round(money2, 2))
+			self._label3.Text = str(round(money2, 2))
 			self._progressBar1.Value = 0
 			
 			num1 = self.num1
@@ -353,21 +350,18 @@ class MainForm(Form):
 				money2 += bet * 2
 				
 				
-				
 			if num1 == 5 and num2 == 5 and num3 == 5:
 					money2 += bet * 100
 					
 			self.num1 = 0
 			self.num2 = 0
 			self.num3 = 0
-			self._label2.Text = str(round(money2, 2))
+			self._label3.Text = str(round(money2, 2))
 			
 			if money2 <= 0:
 				MessageBox.Show("You ran out of Cash")
 			pass
 		
-		
-			
 
 	def Timer1Tick(self, sender, e):
 		im1 = self._pictureBox5.BackgroundImage
@@ -384,7 +378,7 @@ class MainForm(Form):
 		#copied from Button1Click
 		
 		pb1 = self._pictureBox1
-		pb2 = self._pictureBox2
+		pb4 = self._pictureBox4
 		pb3 = self._pictureBox3
 		
 		for lcv in range(0, 1000):
@@ -405,15 +399,15 @@ class MainForm(Form):
 				pb1.BackgroundImage = im5
 				
 			if num2 == 1:
-				pb2.BackgroundImage = im1
+				pb4.BackgroundImage = im1
 			elif num2 == 2:
-				pb2.BackgroundImage = im2
+				pb4.BackgroundImage = im2
 			elif num2 == 3:
-				pb2.BackgroundImage = im3
+				pb4.BackgroundImage = im3
 			elif num2 == 4:
-				pb2.BackgroundImage = im4
+				pb4.BackgroundImage = im4
 			elif num2 == 5:
-				pb2.BackgroundImage = im5
+				pb4.BackgroundImage = im5
 				
 			if num3 == 1:
 				pb3.BackgroundImage = im1
@@ -430,6 +424,6 @@ class MainForm(Form):
 			self._progressBar1.Increment(1)
 			if self._progressBar1.Value == self._progressBar1.Maximum:
 				self._timer1.Enabled = False
-				self._pictureBox2.Visable = False
+				self._pictureBox2.Visible = False
 				self._button1.BackgroundImage = levOff
 				
