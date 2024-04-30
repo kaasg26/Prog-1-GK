@@ -342,9 +342,9 @@ class MainForm(Form):
 			self._label3.Text = str(round(money2, 2))
 			self._progressBar1.Value = 0
 			
-			num1 = self.num1
-			num2 = self.num2
-			num3 = self.num3
+			self.num1 = num1
+			self.num2 = num2
+			self.num3 = num3
 			
 			if num1 == 1 and num2 == 1 and num3 == 1:
 				money2 += bet * 2
@@ -385,6 +385,10 @@ class MainForm(Form):
 			num1 = rnd.Next(1,6)
 			num2 = rnd.Next(1,6)
 			num3 = rnd.Next(1,6)
+			
+			self.num1 = num1
+			self.num2 = num2
+			self.num3 = num3
 			
 			#copy/paste this for num2/pb2 and num3/pb3
 			if num1 == 1:
