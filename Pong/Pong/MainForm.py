@@ -143,7 +143,80 @@ class MainForm(Form):
 	
 
 	def MainFormKeyDown(self, sender, e):
-		pass
+		tball = self._timerball
+		tdum = self._timerdummy
+		tbool = self._timerboolean
+		tmult = self._timermulti
+		tleft = self._timerleft
+		tright = self._timerright
+		bl = self._lblball
+		lblf = self._lblleft
+		lbrt = self._lblright
+		title = self._lbltitle
+		
+		def reset():
+			title.Visible = True
+			title.Text = "Press Enter to Start or M for Multiplayer"
+			self._leftscore.Text = "0"
+			self._rightscore.Text = "0"
+			tball.Enabled = False
+			tdum.Enabled = False
+			tbool.Enabled = False
+			tmult.Enabled = False
+			tleft.Enabled = False
+			tright.Enabled = False
+			bl.Left = self.Width // 2
+			bl.Top = self.Height // 2
+			lblf.Top = (self.Height // 2) - 100 + lblf.Height
+			lbrt.Top = (self.Height // 2) - 100 + lbrt.Height
+			bl.BackColor = Color.White
+			
+		if e.KeyCode == Keys.R:
+			reset()
+			
+		#ToDo secret control
+		
+		if e.KeyCode == Keys.Enter:
+			tball.Enabled = True
+			tdum.Enabled = True
+			tbool.Enabled = True
+			if tmult.Enabled:
+				tbool.Enabled = False
+			title.Visible = False
+			
+		if e.KeyCode == Keys.M:
+			reset()
+			title.Visable = True
+			title.Text = "Use W and S for Left Paddle; Hit Enter to Start"
+			tmult.Enabled = True
+			
+		if tdum.Enabled:
+			if e.KeyCode == Keys.Up:
+				self.flagright = False
+				tright.Enabled = True
+			elif e.KeyCode == Keys.Down:
+				self.flagright = True
+				tright.Enabled = True
+			elif tright.Enabled and self.flagright == False:
+				tright.Enabled = False
+				
+				
+		#Todo finish multip controls
+		if tmult.Enabled and tball.Enabled:
+			if e.Keycode == Keys.W:
+				if e.KeyCode == Keys.Up:
+					self.flagright = False
+					tright.Enabled = True
+			elif e.KeyCode == Keys.Down:
+				self.flagright = True
+				tright.Enabled = True
+			if e.KeyCode == Keys.S:
+				if e.KeyCode == Keys.Up:
+					self.flagright = False
+					tright.Enabled = True
+			elif e.KeyCode == Keys.Down:
+				self.flagright = True
+				tright.Enabled = True
 
 	def TimerballTick(self, sender, e):
 		pass
@@ -155,7 +228,7 @@ class MainForm(Form):
 	def TimerrightTick(self, sender, e):
 		self.pdlTick(self._lblright, self.flagright. self_timmerright)
 		
-	def LblballClick(self. sender, e):
+	def LblballClick(self, sender, e):
 		self._lblball.BackColor = Color.Red
 		self.BackColor = Color.Green
 
