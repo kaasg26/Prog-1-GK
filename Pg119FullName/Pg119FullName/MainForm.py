@@ -69,7 +69,7 @@ class MainForm(Form):
 		# 
 		self._label4.Location = System.Drawing.Point(12, 105)
 		self._label4.Name = "label4"
-		self._label4.Size = System.Drawing.Size(109, 23)
+		self._label4.Size = System.Drawing.Size(175, 23)
 		self._label4.TabIndex = 5
 		self._label4.Text = "This is your full name:"
 		self._label4.Click += self.Label4Click
@@ -82,6 +82,7 @@ class MainForm(Form):
 		self._button1.TabIndex = 6
 		self._button1.Text = "Show"
 		self._button1.UseVisualStyleBackColor = True
+		self._button1.Click += self.Button1Click
 		# 
 		# button2
 		# 
@@ -91,6 +92,7 @@ class MainForm(Form):
 		self._button2.TabIndex = 7
 		self._button2.Text = "Erase"
 		self._button2.UseVisualStyleBackColor = True
+		self._button2.Click += self.Button2Click
 		# 
 		# button3
 		# 
@@ -101,6 +103,7 @@ class MainForm(Form):
 		self._button3.TabIndex = 8
 		self._button3.Text = "Exit"
 		self._button3.UseVisualStyleBackColor = True
+		self._button3.Click += self.Button3Click
 		# 
 		# MainForm
 		# 
@@ -138,3 +141,19 @@ class MainForm(Form):
 
 	def Label2Click(self, sender, e):
 		pass
+
+	def Button1Click(self, sender, e):
+		strFullName = ""
+		
+		strFullName = self._textBox1.Text + " " + self._textBox2.Text
+		self._label3.Text = strFullName
+
+	def Button2Click(self, sender, e):
+		self._textBox1.Clear()
+		self._textBox2.Clear()
+		self._label3.Text = ""
+		
+		self._textBox1.Focus()
+
+	def Button3Click(self, sender, e):
+		Application.Exit()
