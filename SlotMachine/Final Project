@@ -1,0 +1,217 @@
+import pygame
+import math
+import random
+
+pygame.init()
+
+clock = pygame.time.Clock()
+fps = 30
+
+#game window
+bottom_panel = 101
+screen_width = 401
+screen_height = 201 + bottom_panel
+
+screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption('Battle')
+
+#define game variables
+current_fighter = 1
+total_fighters = 3
+action_cooldown = 0
+action_wait_time = 90
+attack = False
+potion = False
+
+
+
+#define fonts
+font = pygame.font.SysFont('Times New Roman', 15)
+
+#difine colors
+red = (255, 0, 0)
+green = (0, 255, 0)
+
+
+
+
+#load images
+#Background image
+background_img = pygame.image.load('Background.png').convert_alpha()
+#panel image
+panel_img = pygame.image.load('panel.png').convert_alpha()
+#skeleton player image
+player_1 = pygame.image.load('IP1.png').convert_alpha()
+#goblin guard image
+goblin = pygame.image.load('GG.png').convert_alpha()
+#sword_curser
+sword_img = pygame.image.load('SC.png').convert_alpha()
+
+
+#create fuction for drawing text
+def draw_text(text, font, text_col, x, y):
+    img = font.render(text, True, text_col)
+    screen.blit(img, (x, y))
+
+
+
+#function drawing background
+def draw_bg():
+    screen.blit(background_img, (0, 0))
+
+#function for drawing panel
+def draw_panel():
+    screen.blit(panel_img, (0, screen_height - bottom_panel))
+    #show skeleton stats
+    draw_text(f'{knight.name} HP: {knight.hp}', font, red, 40, screen_height - bottom_panel + 10)
+    #show golbin guard 1's stats
+    draw_text(f'{guard1.name} HP: {guard1.hp}', font, red, 240, screen_height - bottom_panel + 10)
+    #show golbin guard 2's stats
+    draw_text(f'{guard2.name} HP: {guard2.hp}', font, red, 240, screen_height - bottom_panel + 50)
+    
+    
+def draw_player_1():
+    screen.blit(player_1, (15, 60))
+    
+def draw_goblin_1():
+    screen.blit(goblin, (185, 65))
+    
+def draw_goblin_2():
+    screen.blit(goblin, (270, 65))
+
+
+#fighter class
+class Fighter():
+    def __init__(self, x, y, name, max_hp, strength, potions):
+        self.name = name
+        self.max_hp = max_hp
+        self.hp = max_hp
+        self.strength = strength
+        self.start_potions = potions
+        self.potions = potions
+        self.alive = True
+        self.rect = pygame.rect
+     
+        
+        
+    def attack(self, target):
+        #deal damage to enemy
+        rand = random.randint(-5, 5)
+        damage = self.strength + rand
+        target.hp -= damage
+        #check if target has died
+        if target.hp < 0:
+            target.hp = 0
+            target.alive = False
+        #set variables to attack animation
+        
+    
+    def draw(self):
+        screen.blit(self.image, self.rect)
+        
+        
+class HealthBar():
+    def __init__(self, x, y, hp, max_hp):
+        self.x = x
+        self.y = y
+        self.hp = hp
+        self.max_hp = max_hp
+        
+        
+    def draw(self, hp):
+        #update with new health
+        self.hp = hp
+        #calc health ratio
+        ratio = self.hp / self.max_hp
+        pygame.draw.rect(screen, red, (self.x, self.y, 150, 20))
+        pygame.draw.rect(screen, green, (self.x, self.y, 150, 20))
+        
+knight = Fighter(100, 160, 'Knight', 30, 10, 3)
+guard1 = Fighter(250, 370, 'Guard1', 20, 6, 1)
+guard2 = Fighter(350, 370, 'Guard2', 20, 6, 1)
+        
+knight_health_bar = HealthBar(20, screen_height - bottom_panel + 40, knight.hp, knight.max_hp)
+guard1_health_bar = HealthBar(220, screen_height - bottom_panel + 30, guard1.hp, guard1.max_hp)
+guard2_health_bar = HealthBar(220, screen_height - bottom_panel + 70, guard2.hp, guard2.max_hp)
+
+
+guard_list = []
+guard_list.append(guard1)
+guard_list.append(guard2)
+
+
+run = True
+while run:
+    
+    clock.tick(fps)
+    
+    #draw background
+    draw_bg()
+    
+    #draw panel
+    draw_panel()
+    knight_health_bar.draw(knight.hp)
+    guard1_health_bar.draw(guard1.hp)
+    guard2_health_bar.draw(guard2.hp)
+    
+    #draw fighter
+    draw_player_1()
+  
+    draw_goblin_1()
+    
+    draw_goblin_2()
+    
+    
+    #control player actions
+    #reset action variables
+
+    attack = False
+    potion = False
+    target = None
+    for count, guard in enumerate(guard_list):
+        if guard.rect.collidepoint(pos):
+            
+
+
+    
+    
+    #player action
+    if knight.alive == True:
+        if current_fighter == 1:
+            action_cooldown += 1
+            if action_cooldown >= action_wait_time:
+                #look for player action
+                #attack
+                if attack == True and target != None:
+                    knight.attack(target)
+                    current_fighter += 1
+                    action_cooldown = 0
+    
+    for count, guard in enumerate(guard_list):
+        if current_fighter == 2 + count:
+            if guard.alive == True:
+                action_cooldown += 1
+                if action_cooldown >= action_wait_time:
+                    guard.attack(knight)
+                    current_fighter += 1
+                    action_cooldown = 0
+            else:
+                current_fighter += 1
+    
+    #if all fighters have had their turn, return to knight
+    if current_fighter > total_fighters:
+        current_fighter = 1
+    
+    def callback(event):
+        x_pos = event.x
+        y_pos = event.y
+        
+    
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run == False
+ 
+        
+    pygame.display.update()
+            
+pygame.quit() 
